@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+   <% include ('nav') %>
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-800 text-white">
+      <div class="p-4 text-2xl font-bold">Admin Panel</div>
+      <nav class="mt-10">
+        <a href="#" class="flex items-center p-2 text-gray-300 hover:bg-gray-700">
+          <i class="fas fa-home mr-3"></i>
+          Home
+        </a>
+        <a href="#" id="messages" class="flex items-center p-2 text-gray-300 hover:bg-gray-700">
+          <i class="fas fa-bell mr-3"></i>
+          Messages
+        </a>
+        <a href="#" class="flex items-center p-2 text-gray-300 hover:bg-gray-700">
+          <i class="fas fa-chart-line mr-3"></i>
+          Progress
+        </a>
+        <a href="/resources" class="flex items-center p-2 text-gray-300 hover:bg-gray-700">
+          <i class="fas fa-book mr-3"></i>
+          Resources
+        </a>
+        <a href="#" class="flex items-center p-2 text-gray-300 hover:bg-gray-700">
+          <i class="fas fa-cog mr-3"></i>
+          Settings
+        </a>
+        <a href="#" class="flex items-center p-2 text-gray-300 hover:bg-gray-700">
+          <i class="fas fa-sign-out-alt mr-3"></i>
+          Logout
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+      <!-- Cards -->
+      <div class="grid grid-cols-3 gap-6 mb-6">
+        <div class="bg-purple-800 text-white p-4 rounded-lg shadow text-center">
+          <div class="text-xl font-bold">Registered Users</div>
+          <div class="text-2xl">...</div>
+        </div>
+        <div class="bg-purple-800 text-white p-4 rounded-lg text-center shadow">
+          <div class="text-xl font-bold">Active Users</div>
+          <div class="text-2xl">...</div>
+        </div>
+        <div class="bg-purple-800 text-white p-4 rounded-lg text-center shadow">
+          <div class="text-xl font-bold">Ads on Website</div>
+          <div class="text-2xl">...</div>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div class="bg-white rounded-lg shadow overflow-auto mb-6">
+        <table class="min-w-full bg-white" id="userTable">
+          <thead class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+            <tr>
+              <th class="py-3 px-6 text-left">Id#</th>
+              <th class="py-3 px-6 text-left">Username</th>
+              <th class="py-3 px-6 text-left">Email</th>
+              <th class="py-3 px-6 text-left">Creative Category</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-600 text-sm font-light" id="userTableBody">
+            <!-- User data will be injected here -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Resource Cards -->
+      <div>
+        <h2 class="text-2xl font-bold mb-4">Resources</h2>
+        <p class="text-gray-700">The resources are visible to the resource page.</p>
+        <div class="grid grid-cols-4 gap-6">
+          <div class="bg-white p-4 rounded-lg shadow">
+            <img src="https://via.placeholder.com/200" alt="Resource Image" class="w-full h-52 object-cover rounded-lg mb-4">
+            <div class="text-xl font-bold mb-2">Resource Title</div>
+            <p class="text-gray-600 mb-4">This is a short description of the resource.</p>
+            <div class="text-gray-500 text-sm">Created on: 2024-07-29</div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <img src="https://via.placeholder.com/200" alt="Resource Image" class="w-full h-52 object-cover rounded-lg mb-4">
+            <div class="text-xl font-bold mb-2">Resource Title</div>
+            <p class="text-gray-600 mb-4">This is a short description of the resource.</p>
+            <div class="text-gray-500 text-sm">Created on: 2024-07-29</div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <img src="https://via.placeholder.com/200" alt="Resource Image" class="w-full h-52 object-cover rounded-lg mb-4">
+            <div class="text-xl font-bold mb-2">Resource Title</div>
+            <p class="text-gray-600 mb-4">This is a short description of the resource.</p>
+            <div class="text-gray-500 text-sm">Created on: 2024-07-29</div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <img src="https://via.placeholder.com/200" alt="Resource Image" class="w-full h-52 object-cover rounded-lg mb-4">
+            <div class="text-xl font-bold mb-2">Resource Title</div>
+            <p class="text-gray-600 mb-4">This is a short description of the resource.</p>
+            <div class="text-gray-500 text-sm">Created on: 2024-07-29</div>
+          </div>
+          <!-- More resource cards as needed -->
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- footer -->
+<% include ('footer') %>
+  <!-- Scripts -->
+  <script src="/js/admin.js"></script>
+</body>
+</html>

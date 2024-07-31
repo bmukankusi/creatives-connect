@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativesConnect</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="./Images/Cc-logo.png" type="image/png">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="font-sans leading-normal tracking-normal">
+        <%- include('header') %>
+       
+
+        <section class="bg-white py-12">
+            <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mx-5">
+                    <h2 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl mb-4"
+                        id="about">About CreativesConnect</h2>
+                    <p class="text-xl text-gray-600 dark:text-slate-400 mb-4">We are a vibrant community of designers and
+                        businesses, offering a range of resources including events and
+                        workshops to help designers grow professionally.</p>
+                    <p class="text-xl text-gray-600 dark:text-slate-400 my-4">At CreativesConnect, we are dedicated to bridging
+                        the gap between creative talents and businesses in need of
+                        innovative solutions. Our platform serves as a vibrant community where designers and artists, including
+                        fashion designers,
+                        graphic artists, painters, photographers, and other creatives can showcase their work and connect with
+                        potential clients. We believe in the power of creativity
+                        to transform ideas into reality and are committed to providing a space where talent and opportunity
+                        meet.</p>
+                    <p class="text-2xl font-bold">Join us and let your creativity flow freely!</p>
+                </div>
+                <div class="md:w-1/2 mt-6 md:mt-0">
+                    <img src="./Images/soundtrap-ddwbTn5HDdQ-unsplash.jpg" alt="Creative Connect"
+                        class="rounded-lg shadow-lg h-auto w-full">
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col items-center justify-center min-h-screen bg-gray-400">
+            <!-- Get Ready -->
+            <div class="bg-white text-center py-24 px-8 rounded-lg shadow-lg">
+                <h1 class="text-3xl md:text-4xl font-bold text-purple-600 mb-4">Ready to Get Creative?</h1>
+                <p class="text-xl text-gray-600 dark:text-slate-400 md:text-xl  mb-8">
+                    Join us and let your imagination run wild. Whether you're a designer or a business,
+                    Creative Connect is the place to bring your creative projects to life.
+                </p>
+                <button
+                    class="bg-purple-800 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                    <a href="/register#register">Sign up Now</a>
+                </button>
+            </div>
+        </section>
+        <!-- Creatives join -->
+        <section class="max-w-7xl mx-auto p-6">
+            <div class="flex flex-col lg:flex-row items-center bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="w-full lg:w-1/2 p-8">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white sm:text-5xl mb-4">Why Creatives join<span
+                            class="text-purple-500"> CreativesConnect</span></h2>
+                    <p class="mb-6 text-xl text-gray-600 dark:text-slate-400">Immerse yourself in a world of creativity and
+                        innovation, with access to exclusive events,
+                        workshops, and a wealth of resources to fuel your passion.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <svg class="h-6 w-6 text-purple-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="text-2xl font-semibold">Exclusive Events</h3>
+                                <p class="text-xl text-gray-600 dark:text-slate-400">Join our exciting events and network with
+                                    fellow creatives.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="h-6 w-6 text-purple-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="text-2xl font-semibold">Innovative Workshops</h3>
+                                <p class="text-xl text-gray-600 dark:text-slate-400">Participate in hands-on workshops to
+                                    enhance your skills.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="h-6 w-6 text-purple-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="text-2xl font-semibold">Resource Library</h3>
+                                <p class="text-xl text-gray-600 dark:text-slate-400">Access a treasure trove of resources to
+                                    inspire and support your creative journey.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <img class="object-cover w-full h-80 lg:h-full" src="./Images/event.jpg" alt="People at an event">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Why choose us -->
+        <section class="bg-gray-400 py-12">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-4 text-purple-800">Why Choose CreativesConnect?</h2>
+                <p class="text-xl text-gray-600 dark:text-slate-400 mb-8">Discover top talent, find your perfect match, and
+                    bring your creative projects to life with our diverse pool of imaginative designers.</p>
+                <div class="flex flex-col md:flex-row justify-around items-center">
+                    <div class="text-center mb-8 md:mb-0">
+                        <img src="./Images/zigzag.svg" alt="" class="h-12 w-12 mx-auto mb-4" viewBox="0 0 24 24"
+                            stroke="currentColor" fill="none">
+                        <h3 class="text-2xl font-bold text-purple-800 mb-2">Top Talent</h3>
+                        <p class="text-xl text-gray-600 dark:text-slate-400">Explore a curated selection of the best designers
+                            in the industry.</p>
+                    </div>
+                    <div class="text-center mb-8 md:mb-0">
+                        <img src="./Images/connect.svg.svg" alt="" class="h-12 w-12 mx-auto mb-4" viewBox="0 0 24 24"
+                            stroke="currentColor" fill="none">
+                        <h3 class="text-2xl font-bold text-purple-800 mb-2">Perfect Match</h3>
+                        <p class="text-xl text-gray-600 dark:text-slate-400">Find the designer that perfectly fits your project
+                            requirements.</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="./Images/layers.svg" alt="" class="h-12 w-12 mx-auto mb-4" viewBox="0 0 24 24"
+                            stroke="currentColor" fill="none">
+                        <h3 class="text-2xl font-bold text-purple-800 mb-2">Bring Ideas to Life</h3>
+                        <p class="text-xl text-gray-600 dark:text-slate-400">Work with designers who can turn your vision into
+                            reality.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Explore work -->
+        <section class="max-w-7xl mx-auto p-6 my-20">
+            <h2 class="text-3xl font-bold text-center mb-4" id="exploreWork">Explore Creatives</h2>
+            <p class="text-center mb-6 mx-5 text-xl text-gray-600 dark:text-slate-400">Dive into a diverse portfolio showcasing
+                the incredible talent and creativity of our designers.
+                Whether you need fashion designers, graphic artists, or painters, CreativesConnect connects businesses with a
+                vibrant community of skilled professionals.
+                Get inspired and hire your next creative talent! </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-8">
+                    <div class="gallery-item">
+                        <img class="w-full h-48 object-cover" src="./Images/makeup-artist.jpg" alt="Gallery Image 1">
+                        <a href="#" class="caption">Makeup Artists</a>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="w-full h-48 object-cover" src="./Images/painter.jpg" alt="Gallery Image 2">
+                        <a href="#" class="caption">Painters</a>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="w-full h-48 object-cover" src="./Images/ux-designer.jpg" alt="Gallery Image 3">
+                        <a href="#" class="caption">UX/Graphic Designers</a>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="w-full h-48 object-cover" src="./Images/fashion-designer.jpg" alt="Gallery Image 4">
+                        <a href="#" class="caption">Fashion Designers</a>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="w-full h-48 object-cover" src="./Images/photographer.jpg" alt="Gallery Image 5">
+                        <a href="#" class="caption">Photographers</a>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="w-full h-48 object-cover" src="./Images/other.jpg" alt="Gallery Image 6">
+                        <a href="#" class="caption">Other creatives</a>
+                    </div>
+                </div>
+        </section>
+        
+        <!-- Impact section -->
+        <section class="py-12 bg-gray-400">
+            <div class="bg-gray-400 h-16 w-full"></div>
+            <div class="bg-white text-center py-16 px-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Our Impact</h2>
+                <p class="text-xl text-gray-600 dark:text-slate-400 md:text-xl  mb-8">
+                    Join the vibrant community of designers and businesses that are revolutionizing the creative industry.
+                </p>
+                <div class="flex flex-col md:flex-row justify-around items-center">
+                    <div class="mb-8 md:mb-0">
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900">..+</h3>
+                        <p class="text-lg text-gray-700">Designers Connected</p>
+                    </div>
+                    <div class="mb-8 md:mb-0">
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900">..+</h3>
+                        <p class="text-lg text-gray-700">Projects Completed</p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900">..%</h3>
+                        <p class="text-lg text-gray-700">Happy Clients</p>
+                    </div>
+                </div>
+        </section>
+        <%- include('footer') %>
+
+    <script src="./js/index.js"></script> 
+</body>
+
+</html>

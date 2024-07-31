@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativesConnect - Sign Up</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="./Images/Cc-logo.png" type="image/png">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+</head>
+
+<body class="flex flex-col min-h-screen bg-purple-200">
+        <%- include('nav') %>
+
+    <main class="flex-grow flex flex-col items-center justify-center m-12" id="register">
+        <div>
+            <p class="text-purple-500 text-center" id="msg"></p>
+        </div>
+        <div class="bg-gray-400  p-8 rounded-lg shadow-md w-full max-w-lg">
+            <h1 class="text-3xl font-bold mb-6 text-center">Sign up</h1>
+            <form id="register-form" action="/register" method="POST" class="space-y-4 py-2">
+                <div>
+                    <label class="block text-sm font-medium">Name<span class="text-red-500">*</span></label>
+                    <input type="text" id="name" name="name" class="w-full mt-1 p-2 border border-gray-300 rounded"
+                        required>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium">Email address<span class="text-red-500">*</span></label>
+                    <input type="email" id="email" name="email" class="w-full mt-1 p-2 border border-gray-300 rounded"
+                        required>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium">Creative category</label>
+                    <select id="category" name="category" class="w-full mt-1 p-2 border border-gray-300 rounded">
+                        <option>Choose a category</option>
+                        <option>Fashion Designer</option>
+                        <option>Makeup Artist</option>
+                        <option>Photographer</option>
+                        <option>UX/Graphics Designer</option>
+                        <option>Painter</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="relative">
+                    <label class="block text-sm font-medium">Password<span class="text-red-500">*</span></label>
+                    <input type="password" id="password" name="password"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded pr-10" required>
+                    <i class="far fa-eye absolute top-1/2 right-3 transform -translate-y-1/2 cursor-pointer"
+                        id="togglePassword"></i>
+                </div>
+                <div class="relative">
+                    <label class="block text-sm font-medium">Confirm password<span class="text-red-500">*</span></label>
+                    <input type="password" id="confirmPassword" name="confirmPassword"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded pr-10" required>
+                    <i class="far fa-eye absolute top-1/2 right-3 transform -translate-y-1/2 cursor-pointer"
+                        id="toggleConfirmPassword"></i>
+                </div>
+                <div>
+                    <label class="flex items-center">
+                        <input type="checkbox" class="form-checkbox" id="terms">
+                        <span class="ml-2">Agree to <a href="#" class="text-blue-800 hover:underline">terms &
+                                policy</a>.</span>
+                    </label>
+                </div>
+                <button type="submit" class="w-1/3 bg-purple-800 text-white py-2 rounded hover:bg-purple-700" id="registerBtn">Sign
+                    up</button>
+            </form>
+            <p class="text-center mt-4">Already have an account? <a href="/login#login"
+                    class="text-blue-800 hover:underline">Login</a></p>
+        </div>
+    </main>
+    <%- include('footer') %>
+
+    
+    <script src="/js/register.js"></script>
+</body>
+
+</html>

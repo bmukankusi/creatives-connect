@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources-creativesconnect</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="./Images/Cc-logo.png" type="image/png">
+    <style>
+      /* CSS for animation */
+      .fade-in {
+          opacity: 0;
+          animation: fadeIn ease 2s;
+          animation-fill-mode: forwards;
+      }
+
+      @keyframes fadeIn {
+          0% { opacity: 0; }
+          100% { opacity: 1; }
+      }
+  </style>
+</head>
+<body class="bg-purple-200 text-white">
+
+<!-- Navbar -->
+    <%- include('nav')%>
+
+<!-- Main Section -->
+<header class="container mx-auto p-6 text-center md:text-left shadow bg-purple-300">
+    <div class="flex flex-col md:flex-row items-center">
+        <div class="w-full md:w-1/2 space-y-6">
+            <h1 class="text-4xl md:text-5xl font-bold text-purple-800 fade-in">Connecting Talents, Building Careers</h1>
+            <p class="text-gray-900 fade-in">Discover resources to help you upskill your level as a creative. Engage in workshops, learn from experts and mentors, network with fellows, and bring opportunities at table for others.</p>
+            <div class="space-x-4">
+                <a href="#" class="bg-gray-800 hover:bg-gray-700 py-2 px-4 rounded">Explore More</a>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 mt-6 md:mt-0 flex justify-center">
+            <img src="Images/opportunity.jpg" alt="Person with laptop" class="rounded-lg fade-in">
+        </div>
+    </div>
+</header>
+
+<!-- Features Section -->
+
+<h2 class="text-gray-800 font-bold"></h2>
+<section class="py-12 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:shadow-xl">
+                <img src="Images/cameras.jpg" alt="Portfolio showcase" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-lg text-black font-bold mb-3">Portfolio showcase</h2>
+                    <p class="text-gray-600 mb-4">Showcase your creative work to attract potential clients.</p>
+                    <a href="#" class="text-indigo-500 hover:text-indigo-700 font-semibold">Learn more &rarr;</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:shadow-xl">
+                <img src="Images/experience.jpg" alt="Networking opportunities" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-lg text-black font-bold mb-3">Networking opportunities</h2>
+                    <p class="text-gray-600 mb-4">Connect with fellow creatives and industry experts.</p>
+                    <a href="#" class="text-indigo-500 hover:text-indigo-700 font-semibold">Learn more &rarr;</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:shadow-xl">
+                <img src="Images/opportunity.jpg" alt="Client connections" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-lg text-black font-bold mb-3">Client connections</h2>
+                    <p class="text-gray-600 mb-4">Find potential clients looking for your expertise.</p>
+                    <a href="#" class="text-indigo-500 hover:text-indigo-700 font-semibold">Learn more &rarr;</a>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:shadow-xl">
+                <img src="Images/design.jpg" alt="Art gallery" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-lg text-black font-bold mb-3">Art gallery</h2>
+                    <p class="text-gray-600 mb-4">Join forces with othr creatives for exciting projects.</p>
+                    <a href="#" class="text-indigo-500 hover:text-indigo-700 font-semibold">Learn more &rarr;</a>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:shadow-xl">
+                <img src="Images/experience.jpg" alt="Collaboration" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-lg text-black font-bold mb-3">Collaboration</h2>
+                    <p class="text-gray-600 mb-4">Learn from experts and fellow creatives.</p>
+                    <a href="#" class="text-indigo-500 hover:text-indigo-700 font-semibold">Learn more &rarr;</a>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:shadow-xl">
+                <img src="Images/creative.jpg" alt="Creative workspace" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-lg text-black font-bold mb-3">Creative workspace</h2>
+                    <p class="text-gray-600 mb-4">Find inspiring places to work and create. Access resources to enhance your creative skills.</p>
+                    <a href="#" class="text-indigo-500 hover:text-indigo-700 font-semibold">Learn more &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Blog & Article Section -->
+<section class="container mx-auto p-6 shadow-lg m-3 bg-purple-300">
+<div class="flex justify-between items-center mb-6">
+  <div>
+      <h2 class="text-purple-800 font-semibold">Events & Workshops</h2>
+      <h1 class="text-3xl font-bold">Discover networking opportunities</h1>
+  </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <!-- Article Card 1 -->
+  <div class="bg-white rounded shadow-md overflow-hidden">
+      <img src="Images/painter.jpg" alt="Candidate Interview" class="w-full">
+      <div class="p-4">
+          <span class="bg-purple-800 text-white text-xs px-2 py-1 rounded">Painters discuss</span>
+          <h2 class="text-xl font-semibold mt-2">The Power Of Networking In Your Job Search</h2>
+          <div class="text-gray-500 text-sm mt-2 flex items-center">
+              <span class="mr-2">👤 1k+ views</span>
+              <span>📅 August 24, 2024</span>
+          </div>
+          <p class="text-gray-600 mt-2">Cras semper pharetra dolor in sollicitudin. Vestibulum nunc nunc, tempor at ligula id, hendrerit vestibulum est.</p>
+      </div>
+  </div>
+  <!-- Article Card 2 -->
+  <div class="bg-white rounded shadow-md overflow-hidden">
+      <img src="Images/resume.jpg" alt="Resume Writing & Optimization" class="w-full">
+      <div class="p-4">
+          <span class="bg-purple-800 text-white text-xs px-2 py-1 rounded">Resume Writing & Optimization</span>
+          <h2 class="text-xl font-semibold mt-2">Crafting A Winning Resume, Dos And Don'ts</h2>
+          <div class="text-gray-500 text-sm mt-2 flex items-center">
+              <span class="mr-2">👤 1k+ views</span>
+              <span>📅 August 24, 2024</span>
+          </div>
+          <p class="text-gray-600 mt-2">Cras semper pharetra dolor in sollicitudin. Vestibulum nunc nunc, tempor at ligula id, hendrerit vestibulum est.</p>
+      </div>
+  </div>
+  <!-- Article Card 3 -->
+  <div class="bg-white rounded shadow-md overflow-hidden">
+      <img src="Images/job-search.jpg" alt="Job Search Tips" class="w-full">
+      <div class="p-4">
+          <span class="bg-purple-800 text-white text-xs px-2 py-1 rounded">Job Search Tips</span>
+          <h2 class="text-xl font-semibold mt-2">Navigating Industry Trends In Recruitment</h2>
+          <div class="text-gray-500 text-sm mt-2 flex items-center">
+              <span class="mr-2">👤 1k+ views</span>
+              <span>📅 August 24, 2024</span>
+          </div>
+          <p class="text-gray-600 mt-2">Cras semper pharetra dolor in sollicitudin. Vestibulum nunc nunc, tempor at ligula id, hendrerit vestibulum est.</p>
+      </div>
+  </div>
+</div>
+</section>
+
+<section class="py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+        <h2 class="text-sm text-green-600 font-semibold uppercase tracking-wide">Testimonials</h2>
+        <h2 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            What some recent clients say about their experience with CreativesConnect
+        </h2>
+    </div>
+    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="bg-white rounded-lg shadow-md overflow-hidden p-6">
+            <div class="flex items-center">
+                <img src="Images/person-on-comp-removebg-preview.png" alt="Brandon Vega" class="w-16 h-16 rounded-full mr-4">
+                <div>
+                    <h4 class="text-xl font-semibold">Brandon Vega</h4>
+                    <p class="text-sm text-gray-600">Operations Lead, General Entropy</p>
+                </div>
+            </div>
+            <p class="mt-4 text-gray-600">
+                I was really impressed with the way CreativesConnect handled everything. From the first conversation to everything in between, they were very helpful and knowledgeable.
+            </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden p-6">
+            <div class="flex items-center">
+                <img src="Images/person-on-comp-removebg-preview.png" alt="Chris Wei" class="w-16 h-16 rounded-full mr-4">
+                <div>
+                    <h4 class="text-xl font-semibold">Chris Wei</h4>
+                    <p class="text-sm text-gray-600">Founder and CEO, Fair Market Barn</p>
+                </div>
+            </div>
+            <p class="mt-4 text-gray-600">
+                CreativesConnect was the missing piece to my puzzle. From start to finish, they solved every problem and helped us achieve our goals in the most professional way possible.
+            </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden p-6">
+            <div class="flex items-center">
+                <img src="Images/photographer.png" alt="Karen Weiss" class="w-16 h-16 rounded-full mr-4">
+                <div>
+                    <h4 class="text-xl font-semibold">Karen Weiss</h4>
+                    <p class="text-sm text-gray-600">Technical Director, Business Associates LLC</p>
+                </div>
+            </div>
+            <p class="mt-4 text-gray-600">
+                Using CreativesConnect helped me save weeks of work. Their delightful level of quality and service is consistent and one of a kind. I can't recommend CreativesConnect enough.
+            </p>
+        </div>
+
+    </div>
+</div>
+</section>
+<!-- Footer -->
+        <%- include('footer') %>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.4.2/cdn.min.js" defer></script>
+<script>
+  // JavaScript to add fade-in class on page load
+  document.addEventListener("DOMContentLoaded", function() {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      fadeElements.forEach(element => {
+          element.classList.add('fade-in');
+      });
+  });
+</script>
+
+</body>
+</html>

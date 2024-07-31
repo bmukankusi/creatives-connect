@@ -1,0 +1,97 @@
+body {
+    background-color: #f3f4f6;
+}
+
+.bg-custom-orange {
+    background-color: #FFA500;
+}
+
+.bg-custom-purple {
+    background-color: #800080;
+}
+
+.bg-custom-beige {
+    background-color: #F5F5DC;
+}
+
+.bg-header {
+    background-image: url('../Images/krisztian-tabori-IyaNci0CyRk-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: black;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.caption {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-weight: bold;
+    transition: bottom 0.3s ease;
+}
+
+.gallery-item:hover .caption {
+    bottom: 0;
+}
+
+.gallery-item img {
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.color {
+    background-color: #D940DC;
+}
+
+.text-color {
+    color: #D940DC;
+}
+
+.category {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.category:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    border: 5px solid purple;
+    border-radius: 7px;
+}
+
+#categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+

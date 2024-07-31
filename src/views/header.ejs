@@ -1,0 +1,75 @@
+<header class="bg-header h-screen flex flex-col justify-between text-white">
+    <nav class="flex justify-between items-center p-4 bg-gray-800 bg-opacity-75">
+        <div class="flex items-center space-x-4">
+            <img src="/Images/Cc-logo.png" alt="Creative Connect Logo" class="h-10 w-10">
+            <div class="text-2xl font-bold">CreativesConnect</div>
+        </div>
+        <div class="hidden md:flex space-x-8">
+            <a href="/" class="text-xl hover:text-gray-300">Home</a>
+            <a href="/#about" class="text-xl hover:text-gray-300">About</a>
+            <a href="/resources" class="text-xl hover:text-gray-300">Explore</a>
+            <div class="relative">
+                <a href="#" id="designerDesktop" class="text-xl hover:text-gray-300">Creatives</a>
+                <div id="dropdownDesktop"
+                    class="absolute hidden bg-white text-black mt-1 rounded shadow-lg z-10 dropdown-menu">
+                    <a href="#" class="hover:bg-gray-200">UX/Graphic Designers</a>
+                    <a href="#" class="hover:bg-gray-200">Makeup Artists</a>
+                    <a href="#" class="hover:bg-gray-200">Photographers</a>
+                    <a href="#" class="hover:bg-gray-200">Fashion Designers</a>
+                    <a href="#" class="hover:bg-gray-200">Painters</a>
+                    <a href="#" class="hover:bg-gray-200">Other</a>
+                </div>
+            </div>
+            <a href="/contacts#contact" class="text-xl hover:text-gray-300">Contact</a>
+        </div>
+       <div class="flex justify-around space-x-2">
+        <a href="/login#login"
+        class="hidden md:block bg-purple-800 hover:bg-purple-700 text-white px-4 py-2 rounded">Login</a>
+        <a href="/register#register"
+        class="hidden md:block bg-purple-800 hover:bg-purple-700 text-white px-4 py-2 rounded">Signup</a>
+       </div>
+        <div class="md:hidden flex items-center">
+            <button id="menuButton" class="focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div id="menu" class="md:hidden flex flex-col items-center text-center bg-black bg-opacity-75 p-6">
+        <a href="/" class="block py-2 text-lg hover:text-gray-300">Home</a>
+        <a href="/#about" class="block py-2 text-lg hover:text-gray-300">About</a>
+        <a href="/contacts#contact" class="block py-2 text-lg hover:text-gray-300">Contact</a>
+        <a href="/resources" class="block py-2 text-lg hover:text-gray-300">Explore</a>
+        <div class="relative w-full text-center">
+            <button id="designerMobile"
+                class="block py-2 text-lg hover:text-gray-300 w-full text-left">Designer</button>
+            <div id="dropdownMobile"
+                class="hidden bg-black bg-opacity-75 text-black rounded shadow-lg mt-1 z-10 w-full dropdown-menu">
+                <a href="#" class="hover:bg-gray-200">Graphic Designers</a>
+                <a href="#" class="hover:bg-gray-200">Makeup Artists</a>
+                <a href="#" class="hover:bg-gray-200">UX Designers</a>
+                <a href="#" class="hover:bg-gray-200">Content Creators</a>
+                <a href="#" class="hover:bg-gray-200">Fashion Designers</a>
+                <a href="#" class="hover:bg-gray-200">Painters</a>
+            </div>
+        </div>
+        <a href="/login#login" class="block bg-purple-800 hover:bg-purple-700 text-white px-4 py-2 rounded">Login</a>
+    </div>
+
+    <div class="flex flex-col items-center justify-center flex-grow text-center p-6 bg-opacity-50 bg-black">
+        <h1 class="text-6xl font-bold mb-4">Unleash <span class="text-orange-300">Your</span> Creativity</h1>
+        <p class="text-2xl mb-8">Join our platform where creative minds come together to showcase their work and bring
+            your wildest ideas to life.</p>
+        <div class="space-x-4">
+            <a href="#exploreWork" class="bg-white text-black font-md px-6 py-3 rounded shadow hover:bg-gray-200">Explore
+                Designers</a>
+            <a href="#profiles" class="bg-purple-800 hover:bg-purple-700 text-white px-6 py-3 rounded shadow">Hire a
+                Designer</a>
+        </div>
+    </div>
+    
+</header>

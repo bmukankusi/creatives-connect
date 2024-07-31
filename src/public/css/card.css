@@ -1,0 +1,61 @@
+.move {
+  display: flex;
+  animation: move 10s linear infinite;
+}
+
+@keyframes move {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.card-container {
+  display: flex;
+  width: 1000px; /* 4 cards at 250px each */
+}
+
+.card {
+  width: 250px;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  margin-right: 1rem;
+  background-color: white;
+  flex-shrink: 0;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.card img{
+  width: 60%;
+  height:80%;
+  object-fit: fit;
+}
+
+.card:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .card-container {
+      width: 2000px; /* Adjust for smaller screens */
+  }
+  .card {
+      width: 250px;
+      height: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .card-container {
+      width: 1000px; /* Adjust for smaller screens */
+  }
+  .card {
+      width: 250px;
+      height: 200px;
+  }
+}
