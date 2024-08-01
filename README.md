@@ -37,14 +37,14 @@ mongod
 
 npm start
 
-# API Endpoints
+## API Endpoints
 Here are some of the key API endpoints available in this project:
 POST /api/users/register
 POST /api/users/login
 GET /api/users
 
 
-# Admin Routes:
+## Admin Routes:
 GET /api/admin/users
 GET /api/admin/advertisements
 POST /api/admin/resources
