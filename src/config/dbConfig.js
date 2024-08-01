@@ -1,5 +1,6 @@
 const mongoose= require("mongoose")
 const dotenv= require("dotenv").config
+
 async function dbConnet(){
     mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
@@ -9,5 +10,5 @@ async function dbConnet(){
 .catch(err => console.error('MongoDB connection error:', err));
 }
 
-module.exports= dbConnet
+module.exports= dbConnet;
 

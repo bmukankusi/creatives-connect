@@ -28,13 +28,13 @@ async function fetchUserData() {
                 document.getElementById('location').value = data?.location || '';
                 document.getElementById('company').value = data?.company || '';
                 document.getElementById('bio').value = data?.bio || '';
-                document.getElementById('phone').value = data?.contactInfo.phone || '';
+                document.getElementById('phone').value = data?.contactInfo?.phone || '';
                 // document.getElementById('other-email').value = data?.otherEmail || '';
-                document.querySelector('#instagram\\ link').value = data?.contactInfo?.socialMedia.instagram || '';
+                document.querySelector('#instagram\\ link').value = data?.contactInfo?.socialMedia?.instagram || '';
 
 
-                document.getElementById('linkedin').value = data?.contactInfo.socialMedia.linkedin || '';
-                document.getElementById('whatsapp').value = data?.contactInfo.socialMedia.whatsapp || '';
+                document.getElementById('linkedin').value = data?.contactInfo?.socialMedia?.linkedin || '';
+                document.getElementById('whatsapp').value = data?.contactInfo?.socialMedia?.whatsapp || '';
                 document.getElementById('profile-picture').src = data?.profilePicture ? `../${data.profilePicture}` : '../Images/cc-profile.jpg';
 
 
@@ -110,46 +110,7 @@ async function saveUserData() {
 
   //new work upload
 
-  async function fetchUserWorks() {
-    try {
-        const token = localStorage.getItem('token');
-        const response = await fetch('/api/users/works', {
-            method: 'GET',
-            headers: {
-                'Authorization': `Bearer ${token}`,
-                'Content-Type': 'application/json',
-            },
-        });
-
-        if (!response.ok) {
-            throw new Error('Failed to fetch user works');
-        }
-
-        const works = await response.json();
-        console.log(works)
-        const portfolioDiv = document.getElementById('portfolio-works');
-        portfolioDiv.innerHTML = '';
-
-        if (Array.isArray(works?.data)) {
-            works.data.forEach(work => {
-                const workDiv = document.createElement('div');
-                workDiv.className = 'bg-gray-200 p-2 rounded-lg shadow';
-                workDiv.innerHTML = `
-                    <img src="${work?.workImageLink}" alt="Portfolio Image" class="w-full h-52 object-cover rounded-lg mb-4">
-                    <div class="text-xl font-bold mb-2">${work.title}</div>
-                    <p class="text-gray-600 mb-4">${work?.description}</p>
-                    <div class="text-gray-500 text-sm">Tags: ${work?.tags.join(' ')}</div>
-                `;
-                portfolioDiv.appendChild(workDiv);
-            });
-        } else {
-            console.error('Expected an array but received:', works);
-        }
-    } catch (err) {
-        console.error('Error fetching user works:', err);
-        alert('Error fetching user works. Please try again.');
-    }
-}
+  
 
 async function uploadNewWork() {
     const token = localStorage.getItem('token');

@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
 const { User, Resource } = require('../models/userModel');
-const auth = require('../middleware/isLoged');
+const isLoged = require('../middleware/isLoged');
 const admin = require('../middleware/admin'); // Import the admin middleware
 
 // Get all users
-router.get('/users', auth, admin, async (req, res) => {
+router.get('/users', isLoged, admin, async (req, res) => {
     try {
         const users = await User.find().select('-password');
         res.json(users);
@@ -15,7 +15,7 @@ router.get('/users', auth, admin, async (req, res) => {
 });
 
 // Add resources
-router.post('/resources', auth, admin, async (req, res) => {
+router.post('/resources', isLoged, admin, async (req, res) => {
   const { type, title, description, sourceLink } = req.body;
   try {
       const newResource = new Resource({ type, title, description, sourceLink });
@@ -27,7 +27,7 @@ router.post('/resources', auth, admin, async (req, res) => {
 });
 
 // Get resources
-router.get('/resources', auth, admin, async (req, res) => {
+router.get('/resources', isLoged, admin, async (req, res) => {
   try {
       const resources = await Resource.find();
       res.json(resources);

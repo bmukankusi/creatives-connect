@@ -1,17 +1,4 @@
-// const express= require("express")
-// const { userHome, registerUser,loginUser,userProfile, updateProfile } = require("../controllers/userController")
-// const isLoged = require("../middleware/isLoged")
-// const dotenv= require("dotenv").config
 
-// const userRoutes= express.Router()
-
-// userRoutes.get("/", userHome)
-// userRoutes.post("/register", registerUser)
-// userRoutes.post("/login", loginUser)
-// userRoutes.get("/profile", isLoged,userProfile)
-// userRoutes.put("/profile/update", isLoged,updateProfile)
-
-// module.exports =  userRoutes
 
 const express = require("express");
 const {
